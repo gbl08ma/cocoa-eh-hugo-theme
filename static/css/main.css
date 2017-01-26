@@ -191,19 +191,20 @@ section.header .container .logo {
 section.header .name {
   padding-top: 20px;
   font-size: 28px;
-  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: monospace;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  font-weight: bold;
   color: #333333;
   color: #555555;
 }
 section.header nav {
   margin-bottom: 16px;
   text-transform: uppercase;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: monospace;
 }
 section.header nav ul {
   list-style: none;
