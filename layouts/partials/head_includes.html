@@ -1,15 +1,19 @@
 <!-- CSS -->
 
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.v0.9.1.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css">
+
 {{ if .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.min.css">
 {{ end }}
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/reset.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+{{ if .Site.Params.progressively }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
+{{ end }}
 
-{{range .Site.Params.extracssfiles}}
-    <link rel="stylesheet" href="{{.}}">
-{{end}}
+{{ range .Site.Params.extracssfiles }}
+  <link rel="stylesheet" href="{{ . | absURL }}">
+{{ end }}
 
 <!-- Icon -->
 <link rel="shortcut icon"
