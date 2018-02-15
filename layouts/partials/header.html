@@ -5,10 +5,10 @@
 
 <body>
 
-{{ if .IsPage }}
-<section class="header">
-{{ else }}
+{{ if .IsHome }}
 <section class="header header-home">
+{{ else }}
+<section class="header">
 {{ end }}
     <div class="container">
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
